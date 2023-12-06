@@ -1,0 +1,14 @@
+.App {
+  width: 50%;
+    border: 2px solid red;
+    padding: 10px;
+    margin: auto;
+    background-color: grey;
+}
+.folder{
+  display: flex;
+  align-items: center;
+  width: 150px;
+  justify-self: 'space-between';
+  cursor: pointer;
+}

@@ -1,0 +1,62 @@
+/* .App{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: blue;
+    overflow-x: hidden;
+} */
+.navbar{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red;
+    background: black;
+    width: 100%;
+    height: 10vh;
+    padding: 10px 0;
+}
+.navbar h1{
+    color: #fff;
+}
+.navbar span{
+    color: red;
+}
+.control_counter{
+    position: fixed;
+    top: 50px;
+    left: 30px;
+}
+.controls_delete{
+    position: fixed;
+    top: 80px;
+    right: 30px;
+}
+.btn{
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    background: red;
+    margin: 10px auto;
+    font-size: 18px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.App_control{
+    width: 50%;
+    height: 150px;
+    margin: 50px auto;
+}
+.control_Input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.control_Input input{
+padding: 5px;
+margin: 10px 0;
+font-size: 18px;
+border: 1px solid black;
+}
