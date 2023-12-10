@@ -1,0 +1,15 @@
+.wrapper{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.header{
+    background: #f8f8f8;
+}
+.logo{
+    text-decoration: none;
+}
+.logo span{
+ color: blue;
+ font-weight: 700;
+ margin-left: 7px;
+}

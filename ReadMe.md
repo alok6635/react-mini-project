@@ -1,4 +1,6 @@
 **#1- counter-app functional & class based**
+**# create a counter its start 0 to 10 and stop and again start to 0 to 10.**
+**# create a infinite counter in home page jb about page pr jaye to home page ka counter stop ho jaye.** 
 **#2- given a array of object a display the list other component. & delete each item**
 ```
 let user=[
