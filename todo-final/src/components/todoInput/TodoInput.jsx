@@ -1,8 +1,13 @@
-import { useState } from "react";
+import {useEffect,useState} from "react";
 
-const TodoInput = ({handleInpFtn}) => {
+const TodoInput = ({handleInpFtn,edit}) => {
+    console.log(edit);
 
     const [inputValue, setInputValue]=useState();
+
+    useEffect(()=>{
+setInputValue(edit.item)
+    },[edit])
 
     const handleInp = (e) => {
         setInputValue(e.target.value)
@@ -13,6 +18,7 @@ const TodoInput = ({handleInpFtn}) => {
             setInputValue('')
         }
     }
+
 
     return (
         <>
