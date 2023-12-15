@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 420px;
+    margin: 0 auto;
+}
+.wrapper .row{
+    margin: 5px 0px;
+}
+.newBtn{
+    margin-left:15px;
+}
