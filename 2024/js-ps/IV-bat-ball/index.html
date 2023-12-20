@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="calculator">
+<input type="text">
+<div class="button-container">
+  <button>C</button>
+  <button>1</button>
+  <button>2</button>
+
+  <button>+</button>
+  <button onclick="displayValue=displayValue + '3';document.querySelector('input').value=displayValue ">3</button>
+  <button onclick="displayValue=displayValue + '4';document.querySelector('input').value=displayValue">4</button>
+
+  <button onclick="displayValue=displayValue + '-';document.querySelector('input').value=displayValue ">-</button>
+  <button onclick="displayValue=displayValue + '5';document.querySelector('input').value=displayValue ">5</button>
+  <button onclick="displayValue=displayValue + '6';document.querySelector('input').value=displayValue ">6</button>
+
+  <button onclick="displayValue=displayValue + '*';document.querySelector('input').value=displayValue ">*</button>
+  <button onclick="displayValue=displayValue + '7';document.querySelector('input').value=displayValue ">7</button>
+  <button onclick="displayValue=displayValue + '8';document.querySelector('input').value=displayValue ">8</button>
+
+  <button onclick="displayValue=displayValue + '/';document.querySelector('input').value=displayValue ">/</button>
+  <button>=</button>
+  <button onclick="displayValue=displayValue + '9';document.querySelector('input').value=displayValue ">9</button>
+
+  <button onclick="displayValue=displayValue + '0';document.querySelector('input').value=displayValue ">0</button>
+  <button onclick="displayValue=displayValue + '.';document.querySelector('input').value=displayValue ">.</button>
+
+
+</div>
+</div>
+</body>
+<script src="temp.js"></script>
+</html>
