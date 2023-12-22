@@ -1,8 +1,7 @@
-const SideBar=({tab,setTab})=>{
+import { Link } from "react-router-dom"
 
-const handleTab=(tabName)=>{
-  setTab(tabName)
-}
+const SideBar=()=>{
+
 
     return(
         <>
@@ -13,20 +12,20 @@ const handleTab=(tabName)=>{
       <span className="fs-4">Sidebar</span>
     </a>
     <ul className="nav nav-pills flex-column mb-auto">
-      <li className="nav-item"  onClick={()=>handleTab('Home')}>
+      <li className="nav-item">
 
-        <a href="#" className={`nav-link ${tab == 'Home' && 'active'}`} aria-current="page">
+        <Link to="/" className="nav-link" aria-current="page">
           <svg className="bi pe-none me-2" width="16" height="16">
             </svg>
           Home
-        </a>
+        </Link>
       </li>
-      <li className="nav-item" onClick={()=>handleTab('Create Post')}>
-      <a href="#" className={`nav-link ${tab=='Create Post' && 'active'}`} aria-current="page">
+      <li className="nav-item">
+      <Link to="/createpost" className="nav-link " aria-current="page">
           <svg className="bi pe-none me-2" width="16" height="16">
             </svg>
           Create Post
-        </a>
+        </Link>
       </li>
     </ul>
     <div className="dropdown">
