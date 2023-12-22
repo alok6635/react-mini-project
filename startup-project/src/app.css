@@ -1,0 +1,43 @@
+.counter-container {
+    background: aliceblue;
+    text-align: center;
+    display: flex;
+}
+
+.counter-container div {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 3px;
+    border-radius: 5px;
+}
+
+.showDel {
+    width: 100;
+    background: gainsboro;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.DisplayList {
+    background: palegoldenrod;
+    text-align: center;
+}
+.nav{
+    background: lavender;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+.nav a {
+    font-size: 22px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+.wrapper{
+    margin-top: 10px;
+}
