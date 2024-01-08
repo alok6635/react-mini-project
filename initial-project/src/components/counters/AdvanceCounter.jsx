@@ -1,17 +1,29 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 const AdvanceCounter = () => {
-    const[count,setCount]=useState(0);
+    const[timer,setTimer]=useState(0);
+  const[isActive,setIsactive]=useState(false)
 
 
-    return (
-        <>
-            <p>Advance counter</p>
-            <button>Start</button>
-            <button>Pause</button>
-            <button>Reset</button>
-            <button>Restart</button>
-        </>
+  useEffect(()=>{
+    if(isActive){
+      const interval= setInterval(()=>{
+        setTimer((prev)=>prev+1)
+      },1000);
+      return()=>{
+        clearInterval(interval)
+      }
+    }
+  },[isActive])
+  
+    return(
+      <>
+  <h2>Timer:{timer}s</h2>
+    <button onClick={()=>setIsactive(true)}>Start</button>  
+    <button onClick={()=>setIsactive(false)}>Pause</button>  
+    <button onClick={()=>{setTimer(0);setIsactive(false);}}>Reset</button>  
+    <button onClick={()=>{setTimer(0);setIsactive(true);}}>Restart</button>  
+      </>
     )
 }
 

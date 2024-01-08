@@ -1,3 +1,8 @@
+*{
+    ul li{
+        list-style: none;
+    }
+}
 .counter-container {
     background: aliceblue;
     text-align: center;
@@ -40,4 +45,26 @@ body {
 }
 .wrapper{
     margin-top: 10px;
+}
+h4{
+    text-transform: capitalize;
+    color: red;
+}
+.fooditem li{
+ border: 1px solid black;
+ padding: 8px;
+}
+.fooditem{
+    padding: 0;
+}
+.showItem{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.foodItems{
+    width: 90%;
+    height: 25px;
+    margin: 0 auto;
+    display: block;
 }

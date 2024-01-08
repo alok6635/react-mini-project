@@ -6,12 +6,13 @@ import InfiniteCounter from '../counters/InfiniteCounter';
 import AdvanceCounter from '../counters/AdvanceCounter';
 import CheckboxDeleted from '../checkboxdeleted/CheckboxDeleted';
 import CounterStopMoveNextPage from "../counters/CounterStopMoveNextPage";
+import FoodList from "../heathyfood/FoodList";
 
 const Home = () => {
     return (
         <>
             <div className="wrapper">
-                {/* counters components */}
+                <h4>counters</h4>
                 <div className="counter-container">
                     <div><CounterFtn /></div>
                     <div><CounterCls /></div>
@@ -19,13 +20,15 @@ const Home = () => {
                     <div><InfiniteCounter /></div>
                     <div><CounterStopMoveNextPage /></div>
                 </div>
-                
-                {/* ShowDeleteText component */}
+                <h4>Show & Delete  component </h4>
                 <div className="showDel"><ShowDeleteText /></div>
-                {/* DisplayListItem */}
+                <h4>Display list item and delete items</h4>
                 <div className="DisplayList"><DisplayListItem /></div>
-                {/* CheckboxDeleted */}
+                <h4> Checkbox Deleted </h4>
                 <div className='showDel'><CheckboxDeleted /></div>
+                <h4>Healthy App</h4>
+                <div className="healthy"><FoodList/></div>
+                <div></div>
             </div>
         </>
     )

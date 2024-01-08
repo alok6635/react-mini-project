@@ -2,7 +2,7 @@ const Error=({user})=>{
 
     return(
         <>
-        {user.length==0 ? <h1>data not found</h1>: ''}
+        {user.length==0 ? <h5>Data is empty</h5>: ''}
         </>
     )
 }
